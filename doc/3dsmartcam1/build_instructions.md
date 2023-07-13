@@ -16,7 +16,7 @@ The camera's Linux image already contains all the SDK dependencies and there's n
 
 As step 0, you should update the time. Else, cmake and many apt packages will not work. To update time from host computer through ssh use:
 ```
-ssh user@server sudo date -s @`( date -u +"%s" )`
+ssh analog@ip sudo date -s @`( date -u +"%s" )`
 ```
 
 ```console
