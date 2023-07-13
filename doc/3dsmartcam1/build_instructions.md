@@ -15,7 +15,9 @@ To build the SDK and run the included applications and example code the followin
 The camera's Linux image already contains all the SDK dependencies and there's no need to install them again. To update and build the SDK just follow the steps below.
 
 As step 0, you should update the time. Else, cmake and many apt packages will not work. To update time from host computer through ssh use:
-`ssh user@server sudo date -s @`( date -u +"%s" )``
+```
+ssh user@server sudo date -s @`( date -u +"%s" )`
+```
 
 ```console
 analog@adi-smart-camera:~/Workspace/aditof_sdk$ git pull
