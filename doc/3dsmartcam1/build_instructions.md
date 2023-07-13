@@ -14,7 +14,7 @@ To build the SDK and run the included applications and example code the followin
 
 The camera's Linux image already contains all the SDK dependencies and there's no need to install them again. To update and build the SDK just follow the steps below.
 
-As step 0, you should update the time. Else, cmake and many apt packages will not work. To update time from host computer through ssh use:
+As step 0, you should update the time. Else, cmake and many apt packages will not work. To sync time with host computer through ssh use:
 ```
 ssh analog@ip sudo date -s @`( date -u +"%s" )`
 ```
