@@ -27,9 +27,7 @@ git fetch GIT_SSL_NO_VERIFY=true
 ```console
 analog@adi-smart-camera:~/Workspace/aditof_sdk$ git pull
 analog@adi-smart-camera:~/Workspace/aditof_sdk$ cd build
-# Optionally
-analog@adi-smart-camera:~/Workspace/aditof_sdk/build$ cmake -DWITH_EXAMPLES=off -DCMAKE_PREFIX_PATH="/opt/glog;/opt/protobuf;/opt/websockets" ..
-analog@adi-smart-camera:~/Workspace/aditof_sdk/build$ cmake -DUSE_3D_SMART=1 ..
+analog@adi-smart-camera:~/Workspace/aditof_sdk/build$ cmake -DUSE_3D_SMART=1 -DCMAKE_PREFIX_PATH="~/Workspace/aditof_sdk/deps/installed/protobuf;~/Workspace/aditof_sdk/deps/installed/websockets" ..
 analog@adi-smart-camera:~/Workspace/aditof_sdk/build$ make -j4
 ```
 [This page](https://github.com/analogdevicesinc/aditof_sdk/tree/master/cmake/) contains more details about the SDK's CMake build system and the various build options. 
